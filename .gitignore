@@ -1,0 +1,2 @@
+# Leave out all .txt files.
+*.txt
