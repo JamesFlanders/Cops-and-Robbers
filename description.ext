@@ -1,3 +1,7 @@
+#include "hpp\CfgRoles.hpp"
+#include "hpp\CfgRespawnInventory.hpp"
+#include "hpp\CfgDebriefing.hpp"
+
 author = "Flanders";
 onLoadName = "Cops and Robbers";
 onLoadMission = "A classic battle between good and bad.";
@@ -29,81 +33,4 @@ class Header
 	gameType =  TDM;
 	minPlayers =  2;
 	maxPlayers = 18;
-};
-
-class CfgDebriefing
-{
-	class End1Police
-	{
-		title = "The Police has won!";
-		description = "All criminals are arrested or eliminated.";
-		picture = "b_inf";
-		pictureColor[] = {0.6,0.1,0.2,1};
-	};
-
-	class End2Police
-	{
-		title = "The Police has won!";
-		description = "The criminals left without any loot!";
-		picture = "b_inf";
-		pictureColor[] = {0.6,0.1,0.2,1};
-	};
-
-	class EndCriminals
-	{
-		title = "The Criminals have won!";
-		description = "The criminals have succesfully escaped Malden.";
-		picture = "b_inf";
-		pictureColor[] = {0.6,0.1,0.2,1};
-	};
-};
-
-class CfgRoles
-{
-	class Police
-	{
-		displayName = "Police";
-		icon = "\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa";
-	};
-};
-
-class CfgRespawnInventory
-{
-	class POLICE1
-	{
-		displayName = "Police Constable";
-		icon = "\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa";
-		role = "Police";
-
-		weapons[] = {
-			"arifle_MX_Black_F",
-			"Binocular"
-		};
-		magazines[] = {
-			"30Rnd_65x39_caseless_black_mag",
-			"30Rnd_65x39_caseless_black_mag",
-			"30Rnd_65x39_caseless_black_mag",
-			"30Rnd_65x39_caseless_black_mag",
-			"SmokeShell",
-			"SmokeShell",
-			"SmokeShellRed",
-			"SmokeShellRed"
-		};
-		items[] = {
-			"FirstAidKit",
-			"FirstAidKit",
-			"FirstAidKit"
-		};
-		linkedItems[] = {
-			"V_TacVest_blk_POLICE",
-			"H_Cap_police",
-			"optic_ERCO_blk_F",
-			"ItemMap",
-			"ItemCompass",
-			"ItemGPS",
-			"ItemWatch",
-			"ItemRadio"
-		};
-		uniformClass = "U_B_CombatUniform_mcam";
-	};
 };

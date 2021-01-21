@@ -15,7 +15,12 @@ _locations = [shop_trinite, shop_pessagne, shop_port, fuel_dourdan, fuel_larche,
 [west, getMarkerPos "spawn_blufor1"] call BIS_fnc_addRespawnPosition;
 
 //Define spawn inventories for BluFor
-[west, "POLICE1"] call BIS_fnc_addRespawnInventory;
+[west, "Constable1"] call BIS_fnc_addRespawnInventory;
+[west, "Constable2"] call BIS_fnc_addRespawnInventory;
+[west, "Constable3"] call BIS_fnc_addRespawnInventory;
+[west, "ArmedResponse1"] call BIS_fnc_addRespawnInventory;
+[west, "ArmedResponse2"] call BIS_fnc_addRespawnInventory;
+[west, "ArmedResponse3"] call BIS_fnc_addRespawnInventory;
 
 //Create markers and actions for all '_locations'.
 [_locations] execVM "scripts\fn_createLocations.sqf";
