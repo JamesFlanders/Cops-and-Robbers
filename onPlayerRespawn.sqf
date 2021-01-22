@@ -14,5 +14,3 @@ _newUnit enableFatigue false;
 if (side _newUnit == west) then {
 	1 radioChannelAdd [_newUnit];
 };
-
-1 radioChannelAdd [_newUnit];

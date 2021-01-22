@@ -12,5 +12,3 @@ _player enableFatigue false;
 if (side _player == west) then {
 	1 radioChannelAdd [_player];
 };
-
-1 radioChannelAdd [_player];
