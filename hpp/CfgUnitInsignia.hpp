@@ -4,7 +4,7 @@ class CfgUnitInsignia
 	{
 		displayName = "Police";
 		author = "Flanders";		
-		texture = "images\pol_logo_insignia_greyscale.paa";
+		texture = "images\pol_logo_insignia_whitescale.paa";
 		textureVehicle = "";
 	};
 };
