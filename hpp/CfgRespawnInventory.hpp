@@ -172,7 +172,7 @@ class CfgRespawnInventory
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass = "U_B_GEN_Commander_F";
+		uniformClass = "U_B_CombatUniform_mcam";
 	};
 
 	class ArmedResponse2
