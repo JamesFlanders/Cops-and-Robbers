@@ -53,6 +53,7 @@ if (side _caller == independent) then {
 
 		if (_timer <= 0) then {
 			_caller sideChat "Robbery completed!";
+			_caller sideChat format ["You have a balance of €%1", balance];
 			balance = balance + _reward;
 			publicVariable "balance";
 			format ["The robbery at the %1 near %2 has succeeded", _locationType, _name] remoteExec ["hintSilent"];
