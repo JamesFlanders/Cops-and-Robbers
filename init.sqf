@@ -34,3 +34,7 @@ null=[] execVM "cos\cosInit.sqf";
 //Define money of criminals
 balance = 0;
 publicVariable "balance";
+
+//Define robbery cooldown timer
+cooldown = 0;
+publicVariable "cooldown";
