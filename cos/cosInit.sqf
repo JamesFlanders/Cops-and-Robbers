@@ -27,7 +27,7 @@ DefaultSide = Civilian;// Set side of units spawned
 
 _showMarker=false;// Show COS markers on map
 
-showTownLabel = true;// Show town information when entering COS zones
+showTownLabel = false;// Show town information when entering COS zones
 
 debugCOS=false;// Show spawned units on the map
 
