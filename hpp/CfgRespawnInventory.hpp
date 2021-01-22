@@ -41,7 +41,7 @@ class CfgRespawnInventory
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass = "U_B_CombatUniform_mcam";
+		uniformClass = "U_B_GEN_Commander_F";
 	};
 
 	class Constable2
@@ -85,7 +85,7 @@ class CfgRespawnInventory
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass = "U_B_CombatUniform_mcam";
+		uniformClass = "U_B_GEN_Commander_F";
 	};
 
 	class Constable3
@@ -128,7 +128,7 @@ class CfgRespawnInventory
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass = "U_B_CombatUniform_mcam";
+		uniformClass = "U_B_GEN_Commander_F";
 	};
 
 	class ArmedResponse1
@@ -172,7 +172,7 @@ class CfgRespawnInventory
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass = "U_B_CombatUniform_mcam";
+		uniformClass = "U_B_GEN_Commander_F";
 	};
 
 	class ArmedResponse2
@@ -216,7 +216,7 @@ class CfgRespawnInventory
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass = "U_B_CombatUniform_mcam";
+		uniformClass = "U_B_GEN_Commander_F";
 	};
 
 	class ArmedResponse3
@@ -261,7 +261,7 @@ class CfgRespawnInventory
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass = "U_B_CombatUniform_mcam";
+		uniformClass = "U_B_GEN_Commander_F";
 	};
 
 	class Criminal1
