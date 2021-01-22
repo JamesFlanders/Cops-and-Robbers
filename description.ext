@@ -16,7 +16,7 @@ respawn = "BASE";
 respawnDelay = 5;
 respawnOnStart = 1;
 respawnTemplatesWest[] = {"MenuInventory","MenuPosition"};
-respawnTemplatesGuer[] = {"MenuPosition"};
+respawnTemplatesGuer[] = {"MenuPosition","Tickets"};
 
 ReviveMode = 1;
 ReviveUnconsciousStateMode = 0;
