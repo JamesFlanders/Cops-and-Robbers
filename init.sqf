@@ -8,12 +8,6 @@
 _escapeBoats = [escape_boat1, escape_boat2, escape_boat3, escape_boat4, escape_boat5, escape_boat6];
 _locations = [shop_trinite, shop_pessagne, shop_port, fuel_dourdan, fuel_larche, fuel_chapoi, bank_airport];
 
-//Define all spawnpoints for the criminals
-[] execVM "scripts\fn_spawnLocation.sqf";
-
-//Define spawnpoint for the Police
-[west, getMarkerPos "spawn_blufor1"] call BIS_fnc_addRespawnPosition;
-
 //Define spawn inventories for BluFor
 [west, "Constable1"] call BIS_fnc_addRespawnInventory;
 [west, "Constable2"] call BIS_fnc_addRespawnInventory;

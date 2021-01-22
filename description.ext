@@ -13,10 +13,10 @@ saving = 0;
 enableDebugConsole[] = {"76561198034522521"};
 
 respawn = "BASE";
-respawnDelay = 60;
-respawnOnStart = 0;
+respawnDelay = 5;
+respawnOnStart = 1;
 respawnTemplatesWest[] = {"MenuInventory","MenuPosition"};
-respawnTemplatesGuer[] = {"MenuInventory","MenuPosition"};
+respawnTemplatesGuer[] = {"MenuPosition"};
 
 ReviveMode = 1;
 ReviveUnconsciousStateMode = 0;
