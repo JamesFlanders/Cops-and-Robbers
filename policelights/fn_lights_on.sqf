@@ -155,7 +155,6 @@ while{GF_Police_Lights} do {
      if(_leftRed) then {  
     _leftRed = false; 
 
-	//	hintsilent "left";	  
  
 _Blue_Right_Light_1 setLightBrightness 0;
 _Blue_Right_Light_2 setLightBrightness 3; 
@@ -176,8 +175,6 @@ _Red_Left_Light_1 setLightBrightness 0;
 	}else{  
 	
     _leftRed = true;  
-
-	//	hintsilent "right";	
 	
 _Blue_Left_Light_1 setLightBrightness 0;
 _Blue_Left_Light_2 setLightBrightness 3; 

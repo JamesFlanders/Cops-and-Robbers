@@ -20,4 +20,5 @@ switch(paramsarray select 5) do {
 
 if (side _newUnit == west) then {
 	1 radioChannelAdd [_newUnit];
+    [_newUnit, "PoliceInsignia"] call BIS_fnc_setUnitInsignia;
 };
