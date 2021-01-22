@@ -12,8 +12,10 @@ if (side _caller == independent) then {
 
 	if (balance > 0) then {
 		"EndCriminals" call BIS_fnc_endMissionServer;
+		"Criminals have won!" remoteExec ["hintSilent"]; //DEBUG
 	} else {
 		"End2Police" call BIS_fnc_endMissionServer;
+		"Police have won!" remoteExec ["hintSilent"]; //DEBUG
 	};
 
 } else {

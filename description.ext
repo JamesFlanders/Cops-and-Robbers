@@ -1,6 +1,7 @@
 #include "hpp\CfgRoles.hpp"
 #include "hpp\CfgRespawnInventory.hpp"
 #include "hpp\CfgDebriefing.hpp"
+#include "hpp\CfgSounds.hpp"
 #include "hpp\Params.hpp"
 
 author = "Flanders";
