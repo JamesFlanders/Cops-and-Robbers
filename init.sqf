@@ -11,9 +11,9 @@ _locations = [shop_trinite, shop_pessagne, shop_port, fuel_dourdan, fuel_larche,
 [west, "Constable1"] call BIS_fnc_addRespawnInventory;
 [west, "Constable2"] call BIS_fnc_addRespawnInventory;
 [west, "Constable3"] call BIS_fnc_addRespawnInventory;
-[west, "ArmedResponse1"] call BIS_fnc_addRespawnInventory;
-[west, "ArmedResponse2"] call BIS_fnc_addRespawnInventory;
-[west, "ArmedResponse3"] call BIS_fnc_addRespawnInventory;
+[independent, "Criminal1"] call BIS_fnc_addRespawnInventory;
+[independent, "Criminal2"] call BIS_fnc_addRespawnInventory;
+[independent, "Criminal3"] call BIS_fnc_addRespawnInventory;
 
 //Create markers and actions for all '_locations'.
 [_locations] execVM "scripts\fn_createLocations.sqf";

@@ -9,6 +9,7 @@ loadScreen = "images\thumbnail.jpg";
 
 disabledAI = 1;
 saving = 0;
+respawnButton = 0;
 
 enableDebugConsole[] = {"76561198034522521"};
 
@@ -16,7 +17,7 @@ respawn = "BASE";
 respawnDelay = 5;
 respawnOnStart = 1;
 respawnTemplatesWest[] = {"MenuInventory","MenuPosition"};
-respawnTemplatesGuer[] = {"MenuPosition","Tickets"};
+respawnTemplatesGuer[] = {"MenuInventory","MenuPosition","Tickets"};
 
 ReviveMode = 1;
 ReviveUnconsciousStateMode = 0;

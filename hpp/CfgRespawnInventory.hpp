@@ -230,11 +230,11 @@ class CfgRespawnInventory
 			"Binocular"
 		};
 		magazines[] = {
-			"30Rnd_65x39_caseless_black_mag",
-			"30Rnd_65x39_caseless_black_mag",
-			"30Rnd_65x39_caseless_black_mag",
-			"30Rnd_65x39_caseless_black_mag",
-			"30Rnd_65x39_caseless_black_mag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
 			"SmokeShell",
 			"SmokeShell",
 			"SmokeShellBlue",
@@ -262,5 +262,130 @@ class CfgRespawnInventory
 			"ItemRadio"
 		};
 		uniformClass = "U_B_GEN_Commander_F";
+	};
+
+	class Criminal1
+	{
+		displayName = "Criminal (AKM)";
+		icon = "\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa";
+		role = "Criminals";
+
+		weapons[] = {
+			"arifle_AKM_F",
+			"Criminals"
+		};
+		magazines[] = {
+			"30Rnd_762x39_Mag_F",
+			"30Rnd_762x39_Mag_F",
+			"30Rnd_762x39_Mag_F",
+			"30Rnd_762x39_Mag_F",
+			"30Rnd_762x39_Mag_F",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShellRed",
+			"SmokeShellRed",
+			"Chemlight_red",
+			"Chemlight_red"
+		};
+		items[] = {
+			"FirstAidKit",
+			"FirstAidKit",
+			"FirstAidKit",
+			"NVGoggles"
+		};
+		linkedItems[] = {
+			"V_PlateCarrier1_rgr_noflag_F",
+			"H_Watchcap_khk",
+			"ItemMap",
+			"ItemCompass",
+			"ItemGPS",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass = "U_BG_Guerrilla_6_1";
+	};
+
+	class Criminal2
+	{
+		displayName = "Criminal (Katiba)";
+		icon = "\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa";
+		role = "Criminals";
+
+		weapons[] = {
+			"arifle_Katiba_F",
+			"Binocular"
+		};
+		magazines[] = {
+			"30Rnd_65x39_caseless_green",
+			"30Rnd_65x39_caseless_green",
+			"30Rnd_65x39_caseless_green",
+			"30Rnd_65x39_caseless_green",
+			"30Rnd_65x39_caseless_green",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShellRed",
+			"SmokeShellRed",
+			"Chemlight_red",
+			"Chemlight_red"
+		};
+		items[] = {
+			"FirstAidKit",
+			"FirstAidKit",
+			"FirstAidKit",
+			"NVGoggles"
+		};
+		linkedItems[] = {
+			"V_PlateCarrier1_rgr_noflag_F",
+			"H_Watchcap_khk",
+			"optic_MRCO",
+			"ItemMap",
+			"ItemCompass",
+			"ItemGPS",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass = "U_BG_Guerrilla_6_1";
+	};
+
+	class Criminal3
+	{
+		displayName = "Criminal (Mk20)";
+		icon = "\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa";
+		role = "Criminals";
+
+		weapons[] = {
+			"arifle_Mk20_plain_F",
+			"Binocular"
+		};
+		magazines[] = {
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShellRed",
+			"SmokeShellRed",
+			"Chemlight_red",
+			"Chemlight_red"
+		};
+		items[] = {
+			"FirstAidKit",
+			"FirstAidKit",
+			"FirstAidKit",
+			"NVGoggles"
+		};
+		linkedItems[] = {
+			"V_PlateCarrier1_rgr_noflag_F",
+			"H_Watchcap_khk",
+			"optic_MRCO",
+			"ItemMap",
+			"ItemCompass",
+			"ItemGPS",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass = "U_BG_Guerrilla_6_1";
 	};
 };

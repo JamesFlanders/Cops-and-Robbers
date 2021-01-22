@@ -54,6 +54,20 @@ if (side _caller == independent) then {
 		publicVariable "balance";
 		format ["The robbery at the %1 near %2 has succeeded", _locationType, _name] remoteExec ["hintSilent"];
 
+		switch (_locationType) do {
+			case "shop": { 
+				[west, "ArmedResponse1"] call BIS_fnc_addRespawnInventory;
+				[west, "ArmedResponse2"] call BIS_fnc_addRespawnInventory;
+				[west, "ArmedResponse3"] call BIS_fnc_addRespawnInventory;
+			};
+			case "bank": {
+				[west, "ArmedResponse1"] call BIS_fnc_addRespawnInventory;
+				[west, "ArmedResponse2"] call BIS_fnc_addRespawnInventory;
+				[west, "ArmedResponse3"] call BIS_fnc_addRespawnInventory;
+			};
+			default {};
+		};	
+			
 	} else {
 		_caller sideChat "Robbery failed!";
 		format ["The robbery at the %1 near %2 has failed", _locationType, _name] remoteExec ["hintSilent"];
