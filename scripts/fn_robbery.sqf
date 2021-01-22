@@ -52,11 +52,11 @@ if (side _caller == independent) then {
 		};
 
 		if (_timer <= 0) then {
-			[_caller, [1, "Robbery completed!"]] remoteExec ["customChat", 0];
+			[_caller, "Robbery completed!"] remoteExec ["sideChat", 0];
 			balance = balance + _reward;
 			publicVariable "balance";
 			[_caller, format ["You have a balance of €%1", balance]] remoteExec ["sideChat", 0];
-			format ["The robbery at the %1 near %2 has succeeded", _locationType, _name] remoteExec ["hintSilent", 0];
+			[_caller, [1, format ["The robbery at the %1 near %2 has succeeded", _locationType, _name]]] remoteExec ["customChat", 0];
 
 			if (balance > 7500) then {
 				[west, "ArmedResponse1"] call BIS_fnc_addRespawnInventory;
@@ -65,8 +65,8 @@ if (side _caller == independent) then {
 			};
 
 		} else {
-			[_caller, [1, "Robbery failed!"]] remoteExec ["customChat", 0];
-			format ["The robbery at the %1 near %2 has failed", _locationType, _name] remoteExec ["hintSilent", 0];
+			[_caller, "Robbery failed!"] remoteExec ["sideChat", 0];
+			[_caller, [1, format ["The robbery at the %1 near %2 has failed", _locationType, _name]]] remoteExec ["customChat", 0];
 			_target addAction ["<t color='#990000' size='1.2'><img size='1.2' image='\a3\ui_f\data\Map\Markers\Military\warning_CA.paa'/> Start Robbery</t>", "scripts\fn_robbery.sqf"];
 		};
 	} else {
