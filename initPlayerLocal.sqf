@@ -19,4 +19,5 @@ switch(paramsarray select 5) do {
 if (side _player == west) then {
 	1 radioChannelAdd [_player];
     [_player, "PoliceInsignia"] call BIS_fnc_setUnitInsignia;
+    [_player, [0, "textures\pol_hvuniform.paa"]] remoteExec ["setObjectTextureGlobal", 0];
 };
