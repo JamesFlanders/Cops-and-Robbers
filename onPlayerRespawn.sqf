@@ -10,3 +10,9 @@ _respawn = _this select 2;
 _respawnDelay = _this select 3;
 
 _newUnit enableFatigue false;
+
+if (side _newUnit == west) then {
+	1 radioChannelAdd [_newUnit];
+};
+
+1 radioChannelAdd [_newUnit];

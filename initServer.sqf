@@ -34,9 +34,13 @@ _locations = [shop_trinite, shop_pessagne, shop_port, fuel_dourdan, fuel_larche,
 //Spawn in the Civilian Occupation System
 null=[] execVM "cos\cosInit.sqf";
 
+//Added Customchat for announcements
+_customChannelId = radioChannelCreate [[0.117, 0.564, 1, 1], "Dispatch", "Dispatch:", [call BIS_fnc_listPlayers]];
+
 //Disable certain chat/von channels
-0 enableChannel [true, false];
+0 enableChannel false;
 2 enableChannel false;
+6 enableChannel false;
 
 //Define money of criminals
 balance = 0;

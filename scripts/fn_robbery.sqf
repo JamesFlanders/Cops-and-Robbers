@@ -42,21 +42,21 @@ if (side _caller == independent) then {
 
 		_timer = _time_for_type;
 
-		format ["There is a robbery at the %1 near %2", _locationType, _name] remoteExec ["hintSilent"];
+		[_caller, [1, format ["There is a robbery at the %1 near %2", _locationType, _name]]] remoteExec ["customChat", 0];
 
 		while {_timer > 0 && (_caller inArea _area)} do {
 			_percentage = ((_time_for_type  - _timer) / _time_for_type) * 100;
-			_caller sideChat format ["Robbery completion: %2%3 (%1)", _name, _percentage, "%"];
+			[_caller, format ["Robbery completion: %2%3 (%1)", _name, _percentage, "%"]] remoteExec ["sideChat", 0];
 			_timer = _timer - 3;
 			sleep 3;
 		};
 
 		if (_timer <= 0) then {
-			_caller sideChat "Robbery completed!";
+			[_caller, [1, "Robbery completed!"]] remoteExec ["customChat", 0];
 			balance = balance + _reward;
 			publicVariable "balance";
-			_caller sideChat format ["You have a balance of €%1", balance];
-			format ["The robbery at the %1 near %2 has succeeded", _locationType, _name] remoteExec ["hintSilent"];
+			[_caller, format ["You have a balance of €%1", balance]] remoteExec ["sideChat", 0];
+			format ["The robbery at the %1 near %2 has succeeded", _locationType, _name] remoteExec ["hintSilent", 0];
 
 			if (balance > 7500) then {
 				[west, "ArmedResponse1"] call BIS_fnc_addRespawnInventory;
@@ -65,8 +65,8 @@ if (side _caller == independent) then {
 			};
 
 		} else {
-			_caller sideChat "Robbery failed!";
-			format ["The robbery at the %1 near %2 has failed", _locationType, _name] remoteExec ["hintSilent"];
+			[_caller, [1, "Robbery failed!"]] remoteExec ["customChat", 0];
+			format ["The robbery at the %1 near %2 has failed", _locationType, _name] remoteExec ["hintSilent", 0];
 			_target addAction ["<t color='#990000' size='1.2'><img size='1.2' image='\a3\ui_f\data\Map\Markers\Military\warning_CA.paa'/> Start Robbery</t>", "scripts\fn_robbery.sqf"];
 		};
 	} else {
