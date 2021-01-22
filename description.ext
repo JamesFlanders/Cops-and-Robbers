@@ -1,6 +1,7 @@
 #include "hpp\CfgRoles.hpp"
 #include "hpp\CfgRespawnInventory.hpp"
 #include "hpp\CfgDebriefing.hpp"
+#include "hpp\Params.hpp"
 
 author = "Flanders";
 onLoadName = "Cops and Robbers";
@@ -17,7 +18,7 @@ respawn = "BASE";
 respawnDelay = 5;
 respawnOnStart = 1;
 respawnTemplatesWest[] = {"MenuInventory","MenuPosition"};
-respawnTemplatesGuer[] = {"MenuInventory","MenuPosition","Tickets"};
+respawnTemplatesGuer[] = {"MenuInventory","MenuPosition","Tickets","Spectator"};
 
 ReviveMode = 1;
 ReviveUnconsciousStateMode = 0;

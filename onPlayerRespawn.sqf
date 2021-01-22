@@ -9,7 +9,14 @@ _oldUnit = _this select 1;
 _respawn = _this select 2;
 _respawnDelay = _this select 3;
 
-_newUnit enableFatigue false;
+switch(paramsarray select 5) do {
+    case 0: {
+        _newUnit enableFatigue false;
+    };
+    case 1: {
+        _newUnit enableFatigue true;
+    };
+};
 
 if (side _newUnit == west) then {
 	1 radioChannelAdd [_newUnit];

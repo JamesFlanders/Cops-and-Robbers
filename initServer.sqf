@@ -17,7 +17,7 @@ _locations = [shop_trinite, shop_pessagne, shop_port, fuel_dourdan, fuel_larche,
 [independent, "Criminal3"] call BIS_fnc_addRespawnInventory;
 
 //Define the amount of escapeboats.
-[_escapeBoats, 3] execVM "scripts\fn_escapeBoats.sqf"; //'3' = Amount of vehicles (Make parameretized)
+[_escapeBoats, paramsarray select 6] execVM "scripts\fn_escapeBoats.sqf";
 
 //Define respawns of Criminals
 [independent, 1] call BIS_fnc_respawnTickets;
@@ -49,4 +49,3 @@ publicVariable "balance";
 //Define robbery cooldown timer
 cooldown = 0;
 publicVariable "cooldown";
-
