@@ -28,7 +28,7 @@ class Params
 
 	class Weather3
 	{
-		title = $STR_Parameters_weather_weather;
+		title = "Weather";
 		texts[] = {"Clear","Storm"};
 		values[] = {0,100};
 		default = 0;
@@ -53,7 +53,7 @@ class Params
 
 	class EscapeBoats6
     {
-        title = "Player Fatigue";
+        title = "Escape Boats";
         values[] = {1,2,3,4,5,6};
         texts[] = {"1","2","3","4","5","6"};
         default = 3;
