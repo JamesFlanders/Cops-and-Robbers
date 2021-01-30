@@ -1,3 +1,9 @@
+/*
+	author: Jens Caenen
+	description: none
+	returns: nothing
+*/
+
 //Define all objects.
 _locations = [shop_trinite, shop_pessagne, shop_port, fuel_dourdan, fuel_larche, fuel_chapoi, bank_airport];
 

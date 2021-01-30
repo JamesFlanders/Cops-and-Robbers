@@ -6,6 +6,7 @@
 
 //Define all objects.
 _escapeBoats = [escape_boat1, escape_boat2, escape_boat3, escape_boat4, escape_boat5, escape_boat6];
+_locations = [shop_trinite, shop_pessagne, shop_port, fuel_dourdan, fuel_larche, fuel_chapoi, bank_airport];
 
 //Define spawn inventories for BluFor
 [west, "Constable1"] call BIS_fnc_addRespawnInventory;
@@ -17,6 +18,9 @@ _escapeBoats = [escape_boat1, escape_boat2, escape_boat3, escape_boat4, escape_b
 
 //Define the amount of escapeboats.
 [_escapeBoats, paramsarray select 6] execVM "scripts\fn_escapeBoats.sqf";
+
+//Create markers and actions for all '_locations'.
+[_locations] execVM "scripts\fn_createLocations.sqf";
 
 //Define respawns of Criminals
 [independent, 1] call BIS_fnc_respawnTickets;
